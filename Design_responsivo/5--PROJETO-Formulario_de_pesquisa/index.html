@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h1 id="title">Formulario Online</h1>
+    <p id="description">Preencha o formulario para nos ajudar.</p>
+    <form action="" method="post" id="survey-form">
+
+        <label for="name" id="name-label">Nome</label>
+        <input type="text" name="nome" id="name" placeholder="Digite seu nome aqui" required>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu email aqui" required>
+        <label for="number" id="number-label">Idade (opcional)</label>
+        <input type="number" name="numero" id="number" min="1" max="100" placeholder="Digite sua idade">
+
+        <div id="div-radio">
+            <p>Selecione uma das opções:</p>
+            <label for="selecao1"><input type="radio" name="selecao" id="selecao1" value="selecao1">
+            Seleção 1</label>
+            <label for="selecao2"><input type="radio" name="selecao" id="selecao2" value="selecao2">
+            Seleção 2</label>
+        </div>
+        <div id="div-drop">
+            <label for="dropdown">Escolha uma opção?</label>
+            <select name="dropdown" id="dropdown">
+                <option disabled="" selected="" value="">Escolha uma opção</option>
+                <option value="opcao1">Opção 1</option>
+                <option value="opcao2">Opção 2</option>
+                <option value="opcao3">Opção 3</option>
+            </select>
+        </div>
+        <div id="div-check">
+            <p>Selecione uma ou mais opções:</p>
+            <label for="check1"></label><input type="checkbox" name="check" id="check1" value="check1">
+            Seleção 1</label>
+            <label for="check2"></label><input type="checkbox" name="check" id="check2" value="check2">
+            Seleção 2</label>
+        </div>
+        <div id="div-comm">
+        <label for="comments">Comentários:</label>
+        <textarea name="comentario" id="comments" cols="30" rows="10"
+            placeholder="Escreva seu comentario aqui..."></textarea>
+        </div>
+
+        <button type="submit" id="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
